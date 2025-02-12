@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ghurka/ui/screens/home/widgets/flotting.screen.dart';
+// import 'package:ghurka/ui/screens/home/widgets/flotting.screen.dart';
+import 'package:ghurka/ui/screens/home/widgets/map.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -14,10 +15,9 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(),
+        // appBar: AppBar(),
         body: Container(
-          margin: const EdgeInsets.only(bottom: 0.0), // Set bottom margin
-          child: PopupMenu(),
+          child: MapScreen()
         ),
       ),
     );
